@@ -8,7 +8,7 @@
   {1, 1, 1, 1, 1, 1, 1}, // 8
   {0, 1, 1, 0, 0, 0, 0}, // 1
   {1, 1, 1, 1, 1, 1, 0}, // 0 
-  {1, 1, 1, 1, 0, 1, 1},  // 9
+  {1, 1, 1, 1, 0, 1, 1}, // 9
   {1, 1, 1, 1, 1, 1, 1}, // 8 
 };
 
@@ -27,7 +27,7 @@ void loop() {
 
 void displayNumbers(int num){
   for(int i = 0; i < 7; i++){
-      digitalWrite(segmentPins[i], numbers[num][i] == 1 ? LOW : HIGH);
+      digitalWrite(segmentPins[i], numbers[num][i] == 1 ? HIGH : LOW);
     }
   }
 
